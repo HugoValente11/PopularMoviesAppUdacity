@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Image view dimensions-->
+    <dimen name="imageview_layout_height">200dp</dimen>
+    <dimen name="imageview_layout_width">150dp</dimen>
+    <dimen name="imageview_layout_margin">16dp</dimen>
+
+    <!--Dimensions for Text View release date and vote average-->
+    <dimen name="releasedate_voteaverage_margin">8dp</dimen>
+
+
+
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.gsonparse.DetailsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:contentDescription="@string/background_image"
+            android:id="@+id/imageViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imageview_layout_height"
+            android:src="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <ImageView
+            android:contentDescription="@string/imageview_poster"
+            android:id="@+id/imageViewPoster"
+            android:layout_width="@dimen/imageview_layout_width"
+            android:layout_height="@dimen/imageview_layout_height"
+            android:layout_marginStart="@dimen/imageview_layout_margin"
+            android:layout_marginTop="@dimen/imageview_layout_margin"
+            android:src="@drawable/errorpicasso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <TextView
+            android:id="@+id/textViewReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/releasedate_voteaverage_margin"
+            android:layout_marginTop="@dimen/releasedate_voteaverage_margin"
+            app:layout_constraintStart_toStartOf="@+id/textViewReleaseDateText"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReleaseDateText" />
+
+        <TextView
+            android:id="@+id/textViewVoteAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/releasedate_voteaverage_margin"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewRatingText"
+            app:layout_constraintStart_toEndOf="@+id/textViewRatingText"
+            app:layout_constraintTop_toTopOf="@+id/textViewRatingText" />
+
+        <TextView
+            android:id="@+id/textViewPlot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPoster"
+            tools:text="Plot" />
+
+        <TextView
+            android:id="@+id/textViewReleaseDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/release_date"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPoster"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBackground" />
+
+        <TextView
+            android:id="@+id/textViewRatingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/rating"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textViewReleaseDateText"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReleaseDate" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:numStars="10"
+            android:rating="10"
+            android:stepSize="0.1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewPoster"
+            app:layout_constraintStart_toStartOf="@+id/textViewRatingText"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRatingText" />
+
+        <ImageButton
+            android:contentDescription="@string/favorite_button"
+            android:id="@+id/favoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trailersRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPlot" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reviewsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trailersRecyclerView" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
