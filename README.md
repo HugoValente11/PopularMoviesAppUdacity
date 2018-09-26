@@ -35,7 +35,7 @@ By building this app, you will demonstrate your understanding of the foundationa
 To run the app you will need to apply for an API code here at : www.themoviedb.org & enter it in the <i> gradle.properties </i>.
 
 
-## Mockups
+## Screenshots
 
 ![Main Activity Screenshot](https://user-images.githubusercontent.com/25724955/46087597-9268bb00-c1a2-11e8-8ff7-c7c59bbb98a3.png)
 ![Details Activity Screenshot](https://user-images.githubusercontent.com/25724955/46087596-91378e00-c1a2-11e8-8330-e63286dde12e.png)
