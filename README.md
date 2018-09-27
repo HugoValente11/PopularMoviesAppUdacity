@@ -44,3 +44,4 @@ To run the app you will need to apply for an API code here at : www.themoviedb.o
 
 * [Volley](https://github.com/google/volley) 
 * [Picasso](https://github.com/square/picasso) 
+* [Android Debug Database](https://github.com/amitshekhariitbhu/Android-Debug-Database)
