@@ -1,4 +1,4 @@
-***Udacity Nanodegree Project Popular Movies App***
+# Udacity Nanodegree Project Popular Movies App
 
 **Project Overview**
 
