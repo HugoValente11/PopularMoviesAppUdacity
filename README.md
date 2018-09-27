@@ -42,8 +42,6 @@ To run the app you will need to apply for an API code here at : www.themoviedb.o
 
 ## Libraries Used
 
-## Libraries Used
-
 * [Android Debug Database](https://github.com/amitshekhariitbhu/Android-Debug-Database)
 * [Gson](https://github.com/google/gson)
 * [Volley](https://github.com/google/volley) 
